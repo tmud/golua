@@ -14,9 +14,7 @@ func main() {
 	L.OpenLibs()
 
 	lines := []string{
-		`text = "Hello"`,
-		`name = "Wolrd"`,
-		`print(text .. ", " .. name .. "!")`,
+	   "local function fib(n) if n < 2 then return n end  return fib(n - 2) + fib(n - 1) end print(fib(35))",
 	}
 	var err error
 
@@ -33,6 +31,4 @@ func main() {
 			return
 		}
 	}
-	//fmt.Println("fff")
-
 }
