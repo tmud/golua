@@ -18,11 +18,11 @@ import (
 )
 
 // LuaStatePtr is a type to respresent `struct lua_State`
-type LuaStatePtr *C.struct_lua_State
+type luaStatePtr *C.struct_lua_State
 
 // State stores lua state
 type State struct {
-	state LuaStatePtr
+	state luaStatePtr
 }
 
 // NewState creates new Lua state
