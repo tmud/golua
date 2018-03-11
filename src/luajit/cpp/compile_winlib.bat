@@ -1,7 +1,7 @@
 @echo off
 SET LUAJIT="LuaJIT-2.1.0-beta3"
 del /S /F /Q %LUAJIT%
-RMDIR %LUAJIT /S /Q
+RMDIR %LUAJIT% /S /Q
 del /S /F /Q luajitlib
 RMDIR luajit /S /Q
 7za.exe x %LUAJIT%.zip
