@@ -1,8 +1,8 @@
 package luajit
 
 /*
-#cgo CFLAGS: -ILuaJit-2.1.0-beta3/src
-#cgo LDFLAGS: -L${SRCDIR}/LuaJit-2.1.0-beta3/src -lluajit
+#cgo CFLAGS: -Icpp/luajit/src
+#cgo LDFLAGS: -L${SRCDIR}/cpp/luajit/src -lluajit
 #include <stdlib.h>
 #include <stdio.h>
 #include <lua.h>
